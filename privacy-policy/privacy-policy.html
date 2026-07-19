@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Privacy Policy — Tessera by Pixora</title>
+    <meta
+      name="description"
+      content="Privacy Policy for Tessera, the online fashion shopping application by Pixora. Learn what data we collect, how we use it, and how to request account deletion."
+    />
+    <meta name="author" content="Pixora" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#0A0A0B" />
+    <link rel="canonical" href="https://tessera.app/privacy-policy.html" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Tessera" />
+    <meta property="og:title" content="Privacy Policy — Tessera" />
+    <meta
+      property="og:description"
+      content="How Tessera by Pixora collects, uses, stores, and deletes personal information."
+    />
+    <meta property="og:url" content="https://tessera.app/privacy-policy.html" />
+    <meta property="og:image" content="https://tessera.app/favicon.svg" />
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Privacy Policy — Tessera" />
+    <meta
+      name="twitter:description"
+      content="How Tessera by Pixora collects, uses, stores, and deletes personal information."
+    />
+
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script>
+      (function () {
+        try {
+          var t = localStorage.getItem("tessera-theme");
+          if (t === "light" || t === "dark") {
+            document.documentElement.setAttribute("data-theme", t);
+          } else if (window.matchMedia("(prefers-color-scheme: light)").matches) {
+            document.documentElement.setAttribute("data-theme", "light");
+          }
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="nav" id="site-nav">
+      <div class="nav__inner">
+        <a class="nav__brand" href="index.html" aria-label="Tessera home">
+          <svg class="nav__logo" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+            <rect width="32" height="32" rx="8" fill="currentColor" opacity="0.08" />
+            <path d="M8 10.5h7.2c2.9 0 4.8 1.7 4.8 4.2 0 1.7-.8 3-2.2 3.7L21.5 22h-3.3l-3.3-3.4H11V22H8V10.5zm3 5.9h3.9c1.4 0 2.2-.7 2.2-1.8s-.8-1.8-2.2-1.8H11v3.6z" fill="currentColor" />
+            <circle cx="23.5" cy="9.5" r="2.5" fill="var(--accent)" />
+          </svg>
+          Tessera
+        </a>
+        <nav aria-label="Primary">
+          <ul class="nav__links" id="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="privacy-policy.html" aria-current="page">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms</a></li>
+            <li><a href="account-deletion.html">Delete Account</a></li>
+          </ul>
+        </nav>
+        <div class="nav__actions">
+          <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+            <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M21 14.5A8.5 8.5 0 1 1 9.5 3a7 7 0 0 0 11.5 11.5z" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <circle cx="12" cy="12" r="4" />
+              <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41" stroke-linecap="round" />
+            </svg>
+          </button>
+          <button type="button" class="nav__menu-btn" id="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M4 7h16M4 12h16M4 17h16" stroke-linecap="round" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <header class="page-hero">
+        <div class="page-hero__inner fade-in">
+          <p class="page-hero__eyebrow">Legal</p>
+          <h1>Privacy Policy</h1>
+          <p class="page-hero__desc">
+            This Privacy Policy explains how Pixora (“we”, “us”, or “our”) collects, uses, stores,
+            discloses, and protects personal information when you use the Tessera mobile application
+            and related services.
+          </p>
+          <p class="page-hero__updated">Effective date: July 19, 2026 · Last updated: July 19, 2026</p>
+        </div>
+      </header>
+
+      <div class="legal">
+        <div class="legal__layout">
+          <aside class="toc" aria-label="Table of contents">
+            <h2>On this page</h2>
+            <ol>
+              <li><a href="#introduction">1. Introduction</a></li>
+              <li><a href="#controller">2. Data controller</a></li>
+              <li><a href="#scope">3. Scope of this policy</a></li>
+              <li><a href="#information-we-collect">4. Information we collect</a></li>
+              <li><a href="#how-we-use">5. How we use information</a></li>
+              <li><a href="#legal-bases">6. Legal bases</a></li>
+              <li><a href="#photos">7. Photos &amp; media access</a></li>
+              <li><a href="#sharing">8. Sharing of information</a></li>
+              <li><a href="#security">9. Security measures</a></li>
+              <li><a href="#retention">10. Data retention</a></li>
+              <li><a href="#rights">11. Your rights</a></li>
+              <li><a href="#deletion">12. Account deletion</a></li>
+              <li><a href="#children">13. Children’s privacy</a></li>
+              <li><a href="#international">14. International transfers</a></li>
+              <li><a href="#not-included">15. Features not present</a></li>
+              <li><a href="#changes">16. Changes to this policy</a></li>
+              <li><a href="#contact">17. Contact us</a></li>
+            </ol>
+          </aside>
+
+          <article class="prose">
+            <section id="introduction">
+              <h2>1. Introduction</h2>
+              <p>
+                Tessera is an online fashion shopping application that allows users to create an
+                account, browse and search fashion products, add items to a cart, place orders,
+                manage a profile, upload a profile photo, and write product reviews (with an optional
+                single image attachment).
+              </p>
+              <p>
+                We take your privacy seriously. This policy is written to help users, parents or
+                guardians, and app store reviewers understand exactly what Tessera does with personal
+                data. By creating an account or otherwise using Tessera, you acknowledge the practices
+                described in this Privacy Policy.
+              </p>
+            </section>
+
+            <section id="controller">
+              <h2>2. Data controller</h2>
+              <p>
+                Tessera is developed and operated by <strong>Pixora</strong>. For privacy-related
+                questions, account deletion requests, and data subject inquiries, please contact:
+              </p>
+              <table class="info-table">
+                <tbody>
+                  <tr>
+                    <th scope="row">Application</th>
+                    <td>Tessera</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Developer</th>
+                    <td>Pixora</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Support email</th>
+                    <td><a href="mailto:tesseraapptessera@gmail.com">tesseraapptessera@gmail.com</a></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Contact person</th>
+                    <td>Ulvi Agayev</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Contact email</th>
+                    <td><a href="mailto:ulviagayev2107@gmail.com">ulviagayev2107@gmail.com</a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </section>
+
+            <section id="scope">
+              <h2>3. Scope of this policy</h2>
+              <p>This Privacy Policy applies to:</p>
+              <ul>
+                <li>The Tessera mobile application available on supported platforms;</li>
+                <li>Backend services that power Tessera (Node.js application programming interfaces);</li>
+                <li>
+                  Personal data stored in Tessera’s database (MongoDB) and processed through our hosting
+                  provider (Railway); and
+                </li>
+                <li>Communications you send to our support or contact email addresses regarding Tessera.</li>
+              </ul>
+              <p>
+                This policy does not cover third-party websites, stores, or services that we do not
+                control, even if they are linked from Tessera or from an app store listing.
+              </p>
+            </section>
+
+            <section id="information-we-collect">
+              <h2>4. Information we collect</h2>
+              <p>
+                Tessera collects personal information that you provide directly when you register, update
+                your profile, place an order, or submit a review. The categories of personal information
+                we process are listed below.
+              </p>
+
+              <h3>4.1 Account and profile information</h3>
+              <table class="info-table">
+                <tbody>
+                  <tr>
+                    <th scope="row">Full name</th>
+                    <td>Used to identify your account and personalize your profile.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Email address</th>
+                    <td>Used for registration, login, account recovery, and support communication.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Phone number</th>
+                    <td>Used for account contact and order-related communication where needed.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Password</th>
+                    <td>
+                      Collected at registration or when you change your password. Passwords are hashed
+                      with <strong>bcrypt</strong> before storage. We do not store passwords in plain text.
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Gender</th>
+                    <td>Collected as a profile attribute to support personalization of your account.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Delivery address</th>
+                    <td>Collected so Tessera can record and fulfill orders you place.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Profile photo</th>
+                    <td>
+                      Collected only if you choose to upload one. The image is stored so it can be
+                      displayed on your Tessera profile.
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <h3>4.2 Order and shopping activity</h3>
+              <p>
+                When you browse products, search the catalog, manage a cart, or place an order, Tessera
+                processes the product selections, cart contents, and order details associated with your
+                account so the shopping experience can function as intended.
+              </p>
+
+              <h3>4.3 Reviews and optional review images</h3>
+              <p>
+                If you write a product review, Tessera stores the review text and related metadata (such
+                as the product reviewed and the time of submission). You may optionally upload
+                <strong>one image</strong> with a review. Providing a review image is entirely optional
+                and is not required to submit a text review.
+              </p>
+
+              <h3>4.4 Authentication data</h3>
+              <p>
+                Tessera uses <strong>JWT access tokens</strong> and <strong>JWT refresh tokens</strong>
+                to authenticate sessions after you log in. These tokens are used to keep you signed in
+                securely and to authorize requests to Tessera’s backend services.
+              </p>
+
+              <h3>4.5 Information we do not collect</h3>
+              <p>
+                Tessera does not collect payment card details through an in-app payment system, does not
+                run advertising identifiers for ads, and does not integrate third-party advertising or
+                analytics SDKs in the current version of the application.
+              </p>
+            </section>
+
+            <section id="how-we-use">
+              <h2>5. How we use information</h2>
+              <p>We use personal information to:</p>
+              <ul>
+                <li>Create and maintain your Tessera account;</li>
+                <li>Authenticate you and protect account access using JWT-based sessions;</li>
+                <li>Display your profile information and profile photo within Tessera;</li>
+                <li>Enable product browsing, search, cart management, and order placement;</li>
+                <li>Process and display product reviews and optional review images;</li>
+                <li>Respond to support requests and account deletion requests;</li>
+                <li>Maintain the security, integrity, and proper operation of Tessera; and</li>
+                <li>Comply with applicable legal obligations when required.</li>
+              </ul>
+              <p>
+                We do not sell your personal information. We do not use your personal information for
+                third-party advertising.
+              </p>
+            </section>
+
+            <section id="legal-bases">
+              <h2>6. Legal bases for processing</h2>
+              <p>
+                Where data protection laws require a legal basis, we process personal information under
+                one or more of the following grounds, as applicable:
+              </p>
+              <ul>
+                <li>
+                  <strong>Contract performance</strong> — to provide Tessera features you request, such as
+                  registration, login, orders, and profile management;
+                </li>
+                <li>
+                  <strong>Consent</strong> — for optional uploads such as a profile photo or a review
+                  image, which you choose to provide;
+                </li>
+                <li>
+                  <strong>Legitimate interests</strong> — to secure the service, prevent abuse, and
+                  improve operational reliability in ways that do not override your rights; and
+                </li>
+                <li>
+                  <strong>Legal obligation</strong> — when we must retain or disclose information to
+                  satisfy applicable law, regulation, or lawful request.
+                </li>
+              </ul>
+            </section>
+
+            <section id="photos">
+              <h2>7. Photos and media access</h2>
+              <div class="callout">
+                <p>
+                  <strong>Important:</strong> Tessera only uploads the image you deliberately select.
+                  The application does <strong>not</strong> scan your photo library, does
+                  <strong>not</strong> access photos you did not choose, and does <strong>not</strong>
+                  continuously monitor your device gallery.
+                </p>
+              </div>
+              <p>Photo-related features in Tessera are limited to:</p>
+              <ul>
+                <li>
+                  <strong>Profile photo upload</strong> — you may choose one image from your device to
+                  set as your profile photo; and
+                </li>
+                <li>
+                  <strong>Optional review image</strong> — when writing a review, you may optionally
+                  attach one image that you select.
+                </li>
+              </ul>
+              <p>
+                If you never choose an image, Tessera does not upload photos from your device. You may
+                decline optional photo uploads and continue using other Tessera features that do not
+                require them.
+              </p>
+            </section>
+
+            <section id="sharing">
+              <h2>8. Sharing of information</h2>
+              <p>
+                We do not sell personal information and do not share it with advertisers. We may share
+                information only in the limited circumstances described below.
+              </p>
+              <h3>8.1 Service infrastructure</h3>
+              <p>
+                Tessera’s backend is built with Node.js and stores data in MongoDB. The service is hosted
+                on Railway. These providers process data on our behalf as infrastructure necessary to
+                operate Tessera, subject to appropriate contractual and security controls offered by those
+                platforms.
+              </p>
+              <h3>8.2 Legal requirements</h3>
+              <p>
+                We may disclose personal information if required to do so by law, regulation, legal
+                process, or governmental request, or when we believe disclosure is necessary to protect
+                the rights, safety, or security of Pixora, Tessera users, or the public.
+              </p>
+              <h3>8.3 Business transfers</h3>
+              <p>
+                If Pixora is involved in a merger, acquisition, reorganization, or asset transfer,
+                personal information may be transferred as part of that transaction. We will continue to
+                protect personal information consistent with this policy or provide notice of material
+                changes.
+              </p>
+            </section>
+
+            <section id="security">
+              <h2>9. Security measures</h2>
+              <p>
+                We implement technical and organizational measures designed to protect personal
+                information against unauthorized access, alteration, disclosure, or destruction. These
+                measures include:
+              </p>
+              <ul>
+                <li><strong>HTTPS</strong> encryption for data in transit;</li>
+                <li><strong>bcrypt</strong> hashing for passwords at rest;</li>
+                <li>
+                  <strong>JWT access and refresh tokens</strong> for authenticated API access; and
+                </li>
+                <li>
+                  Access controls and hosting practices appropriate to Tessera’s architecture on Railway.
+                </li>
+              </ul>
+              <p>
+                No method of transmission or storage is completely secure. While we work to protect your
+                information, we cannot guarantee absolute security. Please use a strong unique password
+                for your Tessera account and keep your login credentials confidential.
+              </p>
+            </section>
+
+            <section id="retention">
+              <h2>10. Data retention</h2>
+              <p>
+                We retain personal information for as long as your Tessera account remains active and as
+                needed to provide the service. If you request account deletion, we will delete or
+                irreversibly anonymize associated personal data after verifying your identity, unless we
+                are required to retain certain information longer to comply with legal obligations,
+                resolve disputes, or enforce our agreements.
+              </p>
+              <p>
+                Operational backups and system logs, where used by our hosting environment, may retain
+                residual copies for a limited period consistent with backup rotation and security
+                practices, after which they are overwritten or deleted in the ordinary course.
+              </p>
+            </section>
+
+            <section id="rights">
+              <h2>11. Your rights</h2>
+              <p>
+                Depending on your location and applicable law, you may have rights regarding your
+                personal information, which can include the right to:
+              </p>
+              <ul>
+                <li>Request access to personal information we hold about you;</li>
+                <li>Request correction of inaccurate or incomplete information;</li>
+                <li>Request deletion of your personal information;</li>
+                <li>Object to or restrict certain processing; and</li>
+                <li>Withdraw consent where processing is based on consent.</li>
+              </ul>
+              <p>
+                To exercise these rights, contact us at
+                <a href="mailto:tesseraapptessera@gmail.com">tesseraapptessera@gmail.com</a>. We may ask
+                for information reasonably necessary to verify that the request comes from the account
+                holder.
+              </p>
+            </section>
+
+            <section id="deletion">
+              <h2>12. Account deletion</h2>
+              <p>
+                Tessera does not currently provide an in-app account deletion button. Users who want to
+                permanently delete their Tessera account and associated personal data may request deletion
+                by email.
+              </p>
+              <div class="callout">
+                <p>
+                  Email
+                  <a href="mailto:tesseraapptessera@gmail.com?subject=Tessera%20Account%20Deletion%20Request"
+                    >tesseraapptessera@gmail.com</a
+                  >
+                  with the subject line <strong>“Tessera Account Deletion Request”</strong>. After we
+                  verify your identity, we will permanently delete your account and associated personal
+                  data, unless legal obligations require retention of specific records.
+                </p>
+              </div>
+              <p>
+                For a step-by-step guide, visit our
+                <a href="account-deletion.html">Account Deletion</a> page.
+              </p>
+            </section>
+
+            <section id="children">
+              <h2>13. Children’s privacy</h2>
+              <p>
+                Tessera is not directed to children under the age of 13 (or the minimum age required in
+                your jurisdiction). We do not knowingly collect personal information from children. If
+                you believe a child has provided personal information to Tessera, please contact us at
+                <a href="mailto:tesseraapptessera@gmail.com">tesseraapptessera@gmail.com</a>, and we will
+                take appropriate steps to delete such information.
+              </p>
+            </section>
+
+            <section id="international">
+              <h2>14. International data transfers</h2>
+              <p>
+                Tessera may be accessed from different countries, and our hosting and infrastructure
+                providers may process data in locations outside your country of residence. Where
+                personal information is transferred internationally, we take steps designed to ensure that
+                appropriate protections remain in place consistent with this Privacy Policy and applicable
+                law.
+              </p>
+            </section>
+
+            <section id="not-included">
+              <h2>15. Features not present in Tessera</h2>
+              <p>
+                To avoid misunderstanding about Tessera’s data practices, we expressly confirm that the
+                current version of Tessera does <strong>not</strong> include:
+              </p>
+              <ul>
+                <li>Artificial intelligence (AI) features;</li>
+                <li>An in-app payment system;</li>
+                <li>Push notifications;</li>
+                <li>Advertisements;</li>
+                <li>Analytics tracking tools; or</li>
+                <li>Third-party advertising SDKs.</li>
+              </ul>
+              <p>
+                If any of these capabilities are added in a future release, we will update this Privacy
+                Policy before or at the time those features become available, as appropriate.
+              </p>
+            </section>
+
+            <section id="changes">
+              <h2>16. Changes to this Privacy Policy</h2>
+              <p>
+                We may update this Privacy Policy from time to time to reflect changes in Tessera, our
+                practices, or legal requirements. When we make material changes, we will update the
+                “Last updated” date at the top of this page and, where appropriate, provide additional
+                notice within Tessera or by email. Continued use of Tessera after an updated policy becomes
+                effective constitutes acknowledgment of the revised policy, except where applicable law
+                requires a different standard.
+              </p>
+            </section>
+
+            <section id="contact">
+              <h2>17. Contact us</h2>
+              <p>
+                If you have questions about this Privacy Policy, Tessera’s data practices, or your
+                personal information, please contact Pixora:
+              </p>
+              <ul>
+                <li>
+                  Support:
+                  <a href="mailto:tesseraapptessera@gmail.com">tesseraapptessera@gmail.com</a>
+                </li>
+                <li>
+                  Contact person: Ulvi Agayev —
+                  <a href="mailto:ulviagayev2107@gmail.com">ulviagayev2107@gmail.com</a>
+                </li>
+              </ul>
+              <p>
+                Related documents:
+                <a href="terms.html">Terms &amp; Conditions</a> ·
+                <a href="account-deletion.html">Account Deletion</a>
+              </p>
+            </section>
+          </article>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__grid">
+          <div>
+            <a class="footer__brand" href="index.html">
+              <svg width="28" height="28" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+                <rect width="32" height="32" rx="8" fill="currentColor" opacity="0.08" />
+                <path d="M8 10.5h7.2c2.9 0 4.8 1.7 4.8 4.2 0 1.7-.8 3-2.2 3.7L21.5 22h-3.3l-3.3-3.4H11V22H8V10.5zm3 5.9h3.9c1.4 0 2.2-.7 2.2-1.8s-.8-1.8-2.2-1.8H11v3.6z" fill="currentColor" />
+                <circle cx="23.5" cy="9.5" r="2.5" fill="var(--accent)" />
+              </svg>
+              Tessera
+            </a>
+            <p class="footer__tagline">
+              Online fashion shopping by Pixora. Built for clarity, security, and responsible data
+              handling.
+            </p>
+          </div>
+          <div class="footer__col">
+            <h3>Product</h3>
+            <ul>
+              <li><a href="index.html#features">Features</a></li>
+              <li><a href="index.html#privacy">Privacy commitments</a></li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <h3>Legal</h3>
+            <ul>
+              <li><a href="privacy-policy.html">Privacy Policy</a></li>
+              <li><a href="terms.html">Terms &amp; Conditions</a></li>
+              <li><a href="account-deletion.html">Account Deletion</a></li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <h3>Contact</h3>
+            <ul>
+              <li><a href="mailto:tesseraapptessera@gmail.com">Support email</a></li>
+              <li><a href="mailto:ulviagayev2107@gmail.com">Contact person</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <p>&copy; <span data-year></span> Pixora. All rights reserved.</p>
+          <p class="footer__dev">Developed by <strong>Pixora</strong> · Contact: Ulvi Agayev</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>

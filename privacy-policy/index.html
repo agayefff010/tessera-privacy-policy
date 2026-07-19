@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tessera — Online Fashion Shopping by Pixora</title>
+    <meta
+      name="description"
+      content="Tessera is an online fashion shopping app by Pixora. Browse products, manage your cart and orders, and shop with transparent privacy practices."
+    />
+    <meta name="author" content="Pixora" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#0A0A0B" />
+    <link rel="canonical" href="https://tessera.app/" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Tessera" />
+    <meta property="og:title" content="Tessera — Online Fashion Shopping" />
+    <meta
+      property="og:description"
+      content="Discover fashion products, place orders, and manage your profile with Tessera by Pixora."
+    />
+    <meta property="og:url" content="https://tessera.app/" />
+    <meta property="og:image" content="https://tessera.app/favicon.svg" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Tessera — Online Fashion Shopping" />
+    <meta
+      name="twitter:description"
+      content="Discover fashion products, place orders, and manage your profile with Tessera by Pixora."
+    />
+
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="favicon.svg" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+
+    <script>
+      (function () {
+        try {
+          var t = localStorage.getItem("tessera-theme");
+          if (t === "light" || t === "dark") {
+            document.documentElement.setAttribute("data-theme", t);
+          } else if (window.matchMedia("(prefers-color-scheme: light)").matches) {
+            document.documentElement.setAttribute("data-theme", "light");
+          }
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="nav" id="site-nav">
+      <div class="nav__inner">
+        <a class="nav__brand" href="index.html" aria-label="Tessera home">
+          <svg class="nav__logo" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+            <rect width="32" height="32" rx="8" fill="currentColor" opacity="0.08" />
+            <path
+              d="M8 10.5h7.2c2.9 0 4.8 1.7 4.8 4.2 0 1.7-.8 3-2.2 3.7L21.5 22h-3.3l-3.3-3.4H11V22H8V10.5zm3 5.9h3.9c1.4 0 2.2-.7 2.2-1.8s-.8-1.8-2.2-1.8H11v3.6z"
+              fill="currentColor"
+            />
+            <circle cx="23.5" cy="9.5" r="2.5" fill="var(--accent)" />
+          </svg>
+          Tessera
+        </a>
+
+        <nav aria-label="Primary">
+          <ul class="nav__links" id="nav-links">
+            <li><a href="index.html" aria-current="page">Home</a></li>
+            <li><a href="index.html#features">Features</a></li>
+            <li><a href="index.html#privacy">Privacy</a></li>
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms</a></li>
+            <li><a href="account-deletion.html">Delete Account</a></li>
+          </ul>
+        </nav>
+
+        <div class="nav__actions">
+          <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+            <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M21 14.5A8.5 8.5 0 1 1 9.5 3a7 7 0 0 0 11.5 11.5z" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <circle cx="12" cy="12" r="4" />
+              <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41" stroke-linecap="round" />
+            </svg>
+          </button>
+          <button type="button" class="nav__menu-btn" id="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M4 7h16M4 12h16M4 17h16" stroke-linecap="round" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero">
+        <div class="hero__inner fade-in">
+          <div class="hero__badge">
+            <span class="hero__badge-dot" aria-hidden="true"></span>
+            Fashion shopping, thoughtfully built
+          </div>
+          <h1>Shop fashion with clarity and care.</h1>
+          <p class="hero__lead">
+            Tessera is an online fashion shopping application by Pixora. Browse curated products,
+            build your cart, place orders, and manage your profile—with privacy practices designed
+            for app store compliance and user trust.
+          </p>
+          <div class="btn-group">
+            <a class="btn btn--primary" href="privacy-policy.html">Privacy Policy</a>
+            <a class="btn btn--secondary" href="account-deletion.html">Request account deletion</a>
+          </div>
+          <div class="hero__meta">
+            <div class="hero__meta-item">
+              <span class="hero__meta-label">Developer</span>
+              <span class="hero__meta-value">Pixora</span>
+            </div>
+            <div class="hero__meta-item">
+              <span class="hero__meta-label">Support</span>
+              <span class="hero__meta-value">tesseraapptessera@gmail.com</span>
+            </div>
+            <div class="hero__meta-item">
+              <span class="hero__meta-label">Payments &amp; ads</span>
+              <span class="hero__meta-value">None in this version</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="features">
+        <div class="container">
+          <div class="section__header reveal">
+            <p class="section__eyebrow">What you can do</p>
+            <h2>Everything you need to shop fashion online.</h2>
+            <p class="section__lead">
+              Tessera focuses on a clear shopping experience—accounts, browsing, cart, orders, and
+              reviews—without unrelated tracking or advertising layers.
+            </p>
+          </div>
+
+          <div class="grid grid--3">
+            <article class="card reveal">
+              <div class="card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" stroke-linecap="round" />
+                  <circle cx="9" cy="7" r="4" />
+                  <path d="M19 8v6M22 11h-6" stroke-linecap="round" />
+                </svg>
+              </div>
+              <h3>Account &amp; profile</h3>
+              <p>
+                Register and sign in with email. Manage your profile details and optionally upload a
+                profile photo.
+              </p>
+            </article>
+
+            <article class="card reveal reveal-delay-1">
+              <div class="card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="11" cy="11" r="7" />
+                  <path d="M21 21l-4.3-4.3" stroke-linecap="round" />
+                </svg>
+              </div>
+              <h3>Browse &amp; search</h3>
+              <p>
+                Explore fashion products and find items quickly with search so you can discover what
+                fits your style.
+              </p>
+            </article>
+
+            <article class="card reveal reveal-delay-2">
+              <div class="card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M6 6h15l-1.5 9h-12z" stroke-linejoin="round" />
+                  <circle cx="9" cy="20" r="1.5" />
+                  <circle cx="18" cy="20" r="1.5" />
+                  <path d="M6 6L5 3H2" stroke-linecap="round" />
+                </svg>
+              </div>
+              <h3>Cart &amp; orders</h3>
+              <p>
+                Add products to your cart and place orders. Delivery address information is used to
+                fulfill your purchases.
+              </p>
+            </article>
+
+            <article class="card reveal">
+              <div class="card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 17.3l-5.09 2.67 1-5.81L3.8 9.86l5.84-.85L12 3.7l2.36 5.31 5.84.85-4.11 4.3 1 5.81z" stroke-linejoin="round" />
+                </svg>
+              </div>
+              <h3>Reviews</h3>
+              <p>
+                Share feedback on products. You may optionally attach one image to a review—upload is
+                always under your control.
+              </p>
+            </article>
+
+            <article class="card reveal reveal-delay-1">
+              <div class="card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="3" y="11" width="18" height="10" rx="2" />
+                  <path d="M7 11V7a5 5 0 0 1 10 0v4" stroke-linecap="round" />
+                </svg>
+              </div>
+              <h3>Secure access</h3>
+              <p>
+                Authentication uses JWT access and refresh tokens. Passwords are hashed with bcrypt
+                and never stored in plain text.
+              </p>
+            </article>
+
+            <article class="card reveal reveal-delay-2">
+              <div class="card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke-linejoin="round" />
+                </svg>
+              </div>
+              <h3>HTTPS by default</h3>
+              <p>
+                Tessera traffic is protected with HTTPS. Backend services run on Node.js with MongoDB
+                data storage, hosted on Railway.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--muted" id="privacy">
+        <div class="container">
+          <div class="section__header reveal">
+            <p class="section__eyebrow">Privacy commitments</p>
+            <h2>Clear about what Tessera does—and does not do.</h2>
+            <p class="section__lead">
+              Photo access is limited to images you choose. There are no ads, analytics SDKs, AI
+              features, or in-app payments in the current version.
+            </p>
+          </div>
+
+          <div class="grid grid--2" style="margin-bottom: 2rem">
+            <div class="reveal">
+              <h3 style="font-size: 1.125rem; letter-spacing: -0.02em; margin-bottom: 1rem">
+                What Tessera collects
+              </h3>
+              <ul class="feature-list">
+                <li>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M20 6L9 17l-5-5" stroke-linecap="round" stroke-linejoin="round" /></svg>
+                  <span><strong>Full name</strong> — to personalize your account</span>
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M20 6L9 17l-5-5" stroke-linecap="round" stroke-linejoin="round" /></svg>
+                  <span><strong>Email address</strong> — for sign-in and support</span>
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M20 6L9 17l-5-5" stroke-linecap="round" stroke-linejoin="round" /></svg>
+                  <span><strong>Phone number</strong> — for order and account contact</span>
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M20 6L9 17l-5-5" stroke-linecap="round" stroke-linejoin="round" /></svg>
+                  <span><strong>Password</strong> — stored only as a bcrypt hash</span>
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M20 6L9 17l-5-5" stroke-linecap="round" stroke-linejoin="round" /></svg>
+                  <span><strong>Gender</strong> — optional profile preference</span>
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M20 6L9 17l-5-5" stroke-linecap="round" stroke-linejoin="round" /></svg>
+                  <span><strong>Delivery address</strong> — to fulfill orders</span>
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M20 6L9 17l-5-5" stroke-linecap="round" stroke-linejoin="round" /></svg>
+                  <span><strong>Profile photo</strong> — only if you upload one</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="reveal reveal-delay-1">
+              <h3 style="font-size: 1.125rem; letter-spacing: -0.02em; margin-bottom: 1rem">
+                Not included in Tessera
+              </h3>
+              <ul class="absent-list">
+                <li>No AI features</li>
+                <li>No payment system</li>
+                <li>No push notifications</li>
+                <li>No advertisements</li>
+                <li>No analytics tracking</li>
+                <li>No third-party ad SDKs</li>
+              </ul>
+              <div class="callout" style="margin-top: 1.25rem">
+                <p>
+                  <strong>Photo access:</strong> Tessera only uploads the image you select for a
+                  profile photo or an optional review image. The app never scans or accesses other
+                  photos on your device.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta">
+        <div class="container">
+          <div class="cta__panel reveal">
+            <h2>Need to delete your Tessera account?</h2>
+            <p>
+              Account deletion is not yet available inside the app. Email support to request permanent
+              deletion of your account and associated personal data after identity verification.
+            </p>
+            <div class="btn-group">
+              <a class="btn btn--primary" href="account-deletion.html">Account deletion guide</a>
+              <a class="btn btn--ghost" href="mailto:tesseraapptessera@gmail.com">Email support</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__grid">
+          <div>
+            <a class="footer__brand" href="index.html">
+              <svg width="28" height="28" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+                <rect width="32" height="32" rx="8" fill="currentColor" opacity="0.08" />
+                <path d="M8 10.5h7.2c2.9 0 4.8 1.7 4.8 4.2 0 1.7-.8 3-2.2 3.7L21.5 22h-3.3l-3.3-3.4H11V22H8V10.5zm3 5.9h3.9c1.4 0 2.2-.7 2.2-1.8s-.8-1.8-2.2-1.8H11v3.6z" fill="currentColor" />
+                <circle cx="23.5" cy="9.5" r="2.5" fill="var(--accent)" />
+              </svg>
+              Tessera
+            </a>
+            <p class="footer__tagline">
+              Online fashion shopping by Pixora. Built for clarity, security, and responsible data
+              handling.
+            </p>
+          </div>
+          <div class="footer__col">
+            <h3>Product</h3>
+            <ul>
+              <li><a href="index.html#features">Features</a></li>
+              <li><a href="index.html#privacy">Privacy commitments</a></li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <h3>Legal</h3>
+            <ul>
+              <li><a href="privacy-policy.html">Privacy Policy</a></li>
+              <li><a href="terms.html">Terms &amp; Conditions</a></li>
+              <li><a href="account-deletion.html">Account Deletion</a></li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <h3>Contact</h3>
+            <ul>
+              <li><a href="mailto:tesseraapptessera@gmail.com">Support email</a></li>
+              <li><a href="mailto:ulviagayev2107@gmail.com">Contact person</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <p>&copy; <span data-year></span> Pixora. All rights reserved.</p>
+          <p class="footer__dev">Developed by <strong>Pixora</strong> · Contact: Ulvi Agayev</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
